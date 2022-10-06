@@ -116,10 +116,10 @@ nav {
         text-align: center;
     }
     .logo {
-        font-size: 2em;
+        font-size: 1em;
     }
     .menu-item {
-        font-size: 5em;
+        font-size: 2em;
         line-height: 75px;
     }
 }
@@ -172,9 +172,16 @@ nav {
     justify-content: center;
 }
 
+.information-main {
+    font-size: 5em;
+}
+
 @media (max-width: 600px) {
     .information-container {
         padding: 10px;
+    }
+    .information-main {
+        font-size: 3em;
     }
 }
 
