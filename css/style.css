@@ -9,6 +9,18 @@
     box-sizing: border-box;
 }
 
+/* ------------------------------------ COLORS / BRANDING */
+
+:root {
+    --accent-orange: #8B4000;
+}
+
+.accent-orange {
+    color: var(--accent-orange);
+}
+
+/* ------------------------------------ */
+
 body {
     font-family: "Aeonik-Regular";
     background-color: #e2e2e2;
@@ -41,18 +53,111 @@ nav {
 }
 
 .logo {
-    /* color: white; */
     font-size: 3em;
     font-weight: 600;
     text-transform: uppercase;
 }
 
+#menu-container {
+    padding: 50px;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: translateY(-50vh);
+    transition: 500ms;
+    background-color: white;
+    /* display: none; */
+}
+#menu-open {
+    transition: 300ms;
+}
+
+#menu-open:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+#menu-close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 300ms;
+    /* border: solid red 2px; */
+}
+
+#menu-close:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.menu-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    font-size: 8em;
+    line-height: 120px;
+    transition: 500ms;
+}
+
+.menu-item:hover {
+    color: black;
+    transform: translateX(25px);
+}
+
+
+@media (max-width: 600px) {
+
+    #menu-container {
+        text-align: center;
+    }
+    .logo {
+        font-size: 2em;
+    }
+    .menu-item {
+        font-size: 5em;
+        line-height: 75px;
+    }
+}
+
+/* ------------------------------------ INDEX  */
+
+.intro {
+    padding: 50px;
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* border: solid red 2px; */
+}
+
+.intro-content {
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    .intro {
+        padding: 20px;
+    }
+    .intro-content {
+        width: 100%;
+    }
+    }
 
 /* ------------------------------------ JOURNAL */
 
-
-
-/* ------------------------------------ INDEX  */
+.jean-pierrot {
+    height: 100%;
+    width: 100%;
+    background-image: url('../resources/projects/photography/jean-ambrojo/images/jean-ambrojo-bnw-mountain.jpg');
+    background-size: cover;
+    background-position: center;
+    /* border: solid orange 2px; */
+}
 
 
 
