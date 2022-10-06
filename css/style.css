@@ -111,12 +111,15 @@ nav {
 
 
 @media (max-width: 600px) {
+    .nav-links {
+        padding: 20px;
+    }
 
     #menu-container {
         text-align: center;
     }
     .logo {
-        font-size: 1em;
+        font-size: 1.3em;
     }
     .menu-item {
         font-size: 2em;
@@ -139,12 +142,19 @@ nav {
     width: 50%;
 }
 
+.intro-main {
+    font-size: 3em;
+}
+
 @media (max-width: 600px) {
     .intro {
         padding: 20px;
     }
     .intro-content {
         width: 100%;
+    }
+    .intro-main {
+        font-size: 2em;
     }
     }
 
@@ -181,7 +191,7 @@ nav {
         padding: 10px;
     }
     .information-main {
-        font-size: 3em;
+        font-size: 2em;
     }
 }
 
