@@ -8,6 +8,6 @@ function toggleMenu() {
          toggleMenuStatus = false;
     } else if (toggleMenuStatus == false) {
         toggleMenuStatus = true;
-        mobileMenu.style.transform = "translateY(-66.66vh)" 
+        mobileMenu.style.transform = "translateY(-25vh)" 
     }
 }

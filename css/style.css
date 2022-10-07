@@ -23,7 +23,8 @@
 
 body {
     font-family: "Aeonik-Regular";
-    background-color: #e2e2e2;
+    background-color: #fff;
+    /* background-color: #e2e2e2; */
 }
 
 a {
@@ -45,32 +46,33 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: solid red 2px;
 
 }
 
 .nav-links {
-    padding: 0px 20px;
+    padding: 12px 20px;
 }
 
 .logo {
     font-size: 2em;
     font-weight: 400;
-    /* text-transform: uppercase; */
 }
 
 #menu-container {
     padding: 50px;
-    height: 66.66vh;
+    height: 25vh;
     width: 100%;
     display: flex;
     align-items: center;
     position: absolute;
-    transform: translateY(-66.66vh);
+    transform: translateY(-25vh);
     transition: 500ms;
     background-color: white;
     /* display: none; */
 }
 #menu-open {
+    display: none;
     transition: 300ms;
 }
 
@@ -92,23 +94,6 @@ nav {
     cursor: pointer;
 }
 
-.menu-links {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-item {
-    font-size: 8em;
-    line-height: 120px;
-    transition: 500ms;
-}
-
-.menu-item:hover {
-    color: black;
-    transform: translateX(25px);
-}
-
 
 @media (max-width: 600px) {
     .nav-links {
@@ -120,130 +105,9 @@ nav {
         text-align: left;
         align-items: flex-start;
         justify-content: flex-start;
-        height: 66.66vh;
+        height: 25vh;
     }
-    .logo {
-        font-size: 2em;
-    }
-    .menu-item {
-        font-size: 3em;
-        line-height: 75px;
-    }
+
 }
 
 /* ------------------------------------ INDEX  */
-
-.intro {
-    padding: 50px;
-    height: 50vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    /* border: solid red 2px; */
-}
-
-.intro-content {
-    width: 50%;
-}
-
-.intro-main {
-    font-size: 3em;
-}
-
-@media (max-width: 600px) {
-    .intro {
-        padding: 20px;
-    }
-    .intro-content {
-        width: 100%;
-    }
-    .intro-main {
-        font-size: 2em;
-    }
-    }
-
-/* ------------------------------------ JOURNAL */
-
-.jean-pierrot {
-    height: 100%;
-    width: 100%;
-    background-image: url('../resources/projects/photography/jean-ambrojo/images/jean-ambrojo-bnw-mountain.jpg');
-    background-size: cover;
-    background-position: center;
-    /* border: solid orange 2px; */
-}
-
-
-
-/* ------------------------------------ INFORMATION  */
-
-.information-container {
-    height: 100vh;
-    width: 100%;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.information-main {
-    font-size: 5em;
-}
-
-@media (max-width: 600px) {
-    .information-container {
-        padding: 10px;
-    }
-    .information-main {
-        font-size: 2em;
-    }
-}
-
-/* ------------------------------------ INFORMATION / FOOTER  */
-
-.footer {
-    width: 100%;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    bottom: 0;
-}
-
-.footer-group {
-    display: flex;
-    width: 100%;
-    gap: 20px;
-}
-
-@media (max-width: 600px) {
-    .footer-group {
-        justify-content: center;
-        flex-direction: column;
-    }
-}
-
-/* ------------------------------------ JOBS  */
-
-
-
-/* ------------------------------------ ANIMATIONS + EFFECTS  */
-
-.fade-in {
-    opacity: 1;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
-}
-
-@keyframes fadeInOpacity {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
