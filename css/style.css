@@ -55,7 +55,6 @@ nav {
 .logo {
     font-size: 2em;
     font-weight: 400;
-    letter-spacing: -1px;
     /* text-transform: uppercase; */
 }
 
@@ -117,14 +116,16 @@ nav {
     }
 
     #menu-container {
-        text-align: center;
+        text-align: right;
+        align-items: flex-end;
+        justify-content: flex-end;
     }
     .logo {
-        font-size: 1.3em;
+        font-size: 2em;
     }
     .menu-item {
-        font-size: 2em;
-        line-height: 75px;
+        font-size: 3em;
+        line-height: 100px;
     }
 }
 
