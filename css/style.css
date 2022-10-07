@@ -116,16 +116,18 @@ nav {
     }
 
     #menu-container {
-        text-align: right;
-        align-items: flex-end;
-        justify-content: flex-end;
+        padding: 0;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 66.66vh;
     }
     .logo {
         font-size: 2em;
     }
     .menu-item {
-        font-size: 3em;
-        line-height: 100px;
+        font-size: 5em;
+        line-height: 75px;
     }
 }
 
