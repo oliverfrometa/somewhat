@@ -11,3 +11,9 @@ function toggleMenu() {
         mobileMenu.style.transform = "translateY(-25vh)" 
     }
 }
+
+const gallery = document.querySelector(".gallery");
+
+gallery.addEventListener("wheel", (evt) => {
+    gallery.scrollLeft += evt.deltaY;
+});
