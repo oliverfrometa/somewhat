@@ -104,8 +104,7 @@ nav {
 }
 
 .nav-link:hover {
-    font-size: 2em;
-    color: var(--canvas);
+    color: var(--ocean);
 }
 
 @media (max-width: 1000px) {
@@ -268,6 +267,7 @@ nav {
 
 @media (max-width: 1000px) {
     .gallery {
+        margin-top: 100px;
         flex-direction: column;
         overflow: visible;
         height: 100vh;
