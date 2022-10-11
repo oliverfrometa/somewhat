@@ -12,8 +12,18 @@ function toggleMenu() {
     }
 }
 
-const gallery = document.querySelector(".gallery");
+// const carouselContainer = document.querySelector(".carousel-container");
 
-gallery.addEventListener("wheel", (evt) => {
-    gallery.scrollLeft += evt.deltaY;
+// carouselContainer.addEventListener("wheel", (evt) => {
+//     carouselContainer.scrollLeft += evt.deltaY;
+//     console.log(carousel)
+// });
+
+const scrollContainer = document.querySelector(".carousel-container");
+
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
 });
+
+console.log("hello")

@@ -92,7 +92,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: var(--general-padding);
-    z-index: 1000;
 }
 
 
@@ -120,18 +119,31 @@ nav {
 }
 
 #menu-container {
-    padding: 50px;
+    padding: var(--general-padding);
     height: 25vh;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     position: absolute;
     transform: translateY(-25vh);
     transition: 500ms;
-    /* display: none; */
+    background-color: var(--canvas);
 }
+
+.info {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: solid red 2px; */
+}
+
+@media (max-width: 1000px) {
+    #menu-container {
+        align-items: flex-end;
+    }
+}
+
 #menu-open {
-    /* display: none; */
     transition: 300ms;
 }
 
@@ -141,10 +153,12 @@ nav {
 }
 
 #menu-close {
+    padding: 12px 20px;
     position: fixed;
     top: 0;
     right: 0;
     transition: 300ms;
+    color: var(--stone);
 }
 
 #menu-close:hover {
@@ -169,7 +183,7 @@ nav {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: var(--stone);
+    background-color: var(--sun);
     display: block;
 }
 
@@ -233,50 +247,60 @@ nav {
 }
 
 
+/* ------------------------ CAROUSEL  */
 
-
-
-.gallery-container {
+.carousel-container {
     height: 100vh;
-    width: 100%;
-    padding: 50px 0px;
+    width: auto;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    overflow: hidden;
+    border: solid red 2px;
 }
 
-.gallery {
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-.gallery-item-container {
-    height: 100vh;
-    width: 100%;
-    /* display: flex; */
-}
-
-.gallery-item {
+.carousel {
     height: 100vh;
 }
 
-.gallery-item:hover {
+.carousel-image {
+    height: 100vh;
+}
+
+.carousel-image:hover {
     cursor: pointer;
 }
 
+.carousel-image-text-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* flex-direction: column; */
+    color: white;
+    transform: translate(75px, -100px);
+    /* border: solid blue 2px; */
+}
+
+.carousel-image-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 @media (max-width: 1000px) {
-    .gallery {
-        margin-top: 100px;
-        flex-direction: column;
-        overflow: visible;
-        height: 100vh;
-    }
-    .gallery-item-container {
-        height: auto;
-    }
-    .gallery-item {
-        height: auto;
+
+    .carousel-image-text {
         width: 100%;
+        transform: translate(20px, -80px);
+    }
+
+    .carousel-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-image {
+        width: auto;
     }
 }
